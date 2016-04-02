@@ -39,9 +39,9 @@ body {
 }
 
 .main {
-	height: 20rem;
 	padding-left: 4rem;
 	padding-top: 2rem;
+	padding-bottom: 3rem;
 	background-color: white;
 }
 
@@ -59,4 +59,8 @@ body {
 	text-transform: uppercase;
 	letter-spacing: .5rem;
 	text-align: center;
+}
+
+strike {
+	color: #ff3f80;
 }

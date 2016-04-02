@@ -3,17 +3,27 @@ $(document).ready(function(){
 
   $('.add').mousedown(function() {
   	$(".input").show();
-  });
+  }); //show input box
+
+  $( ".add" ).click(function() {
+  $( "input" ).focus();
+}); //autofocus
 
   $( "input" )
   .keyup(function(e) 
   { if(e.which==13) {
     var value = $( this ).val();
     $( ".lists" ).prepend("<li>" + value + "</li>");
-  console.log("This is the value " + value ); 	
   	$(".input").hide();
   	$("input").val(" ")
   } //End if
   })
-  // .keyup();
+
+  $("li").click(function()
+  {
+  	$("li").wrap("<strike>")
+  console.log("working"); 	
+  }); 
+
+
 });
