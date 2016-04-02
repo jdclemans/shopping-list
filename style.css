@@ -1,0 +1,58 @@
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-size: 16px;
+	background-color: white;
+	font-family: "Open Sans", sans-serif;
+}
+
+.container {
+
+}
+
+.header, .main, .add {
+
+}
+
+
+.header {
+	background-color: #3F51B5;
+	width: 100%;
+	line-height: 5rem;
+	color: white;
+	padding-left: 3rem;
+}
+
+.main {
+	height: 20rem;
+	padding-left: 4rem;
+	padding-top: 2rem;
+}
+
+.main li {
+	padding-top: 1rem;
+	font-size: 1.15rem;
+}
+
+.add {
+	background-color: #3F51B5;
+	width: 100%;
+	line-height: 5rem;
+	color: white;
+	padding-left: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	text-align: center;
+}
