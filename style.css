@@ -43,6 +43,7 @@ body {
 	padding-top: 2rem;
 	padding-bottom: 3rem;
 	background-color: white;
+	min-height: 20rem;
 }
 
 .main li {
