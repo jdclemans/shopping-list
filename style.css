@@ -43,7 +43,6 @@ body {
 	padding-top: 2rem;
 	padding-bottom: 3rem;
 	background-color: white;
-	min-height: 20rem;
 }
 
 .main li {
@@ -57,9 +56,13 @@ body {
 	line-height: 5rem;
 	color: white;
 	padding-left: 2rem;
-	text-transform: uppercase;
-	letter-spacing: .5rem;
+/*	text-transform: uppercase;
+*/	letter-spacing: .25rem;
 	text-align: center;
+}
+
+.add:hover {
+	cursor: pointer;
 }
 
 strike {
