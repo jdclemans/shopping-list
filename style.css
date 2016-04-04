@@ -38,6 +38,8 @@ body {
 	line-height: 5rem;
 	color: white;
 	padding-left: 3rem;
+	position: fixed; 
+
 }
 
 .main {
@@ -59,10 +61,10 @@ body {
 	color: white;
 	padding-left: 2rem;
 /*	text-transform: uppercase;
-*/	letter-spacing: .25rem;
+*/	
 	text-align: center;
 	float: bottom;
-	position: absolute; bottom: 0; left: 0
+	position: fixed; bottom: 0; left: 0
 }
 
 .add:hover {
