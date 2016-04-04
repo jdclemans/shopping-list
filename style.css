@@ -38,8 +38,7 @@ body {
 	line-height: 5rem;
 	color: white;
 	padding-left: 3rem;
-	position: fixed; 
-
+	position: absolute;
 }
 
 .main {
