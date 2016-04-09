@@ -2,8 +2,6 @@
 * {
   margin: 0;
   padding: 0; 
-/*  font-family: /*"OpenSans",*/ sans-serif;
-*/
 }
 
 
@@ -16,10 +14,16 @@ html {
 
 body {
 	font-size: 16px;
-	background-color: #3F51B5;
-	font-family: "Open Sans", sans-serif;
-	background-color: white;
+	font-family: "lato", sans-serif;
+	background-image: url('images/green.jpeg');
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center right;
 
+}
+
+i {
+	margin-bottom: 2rem;
 }
 
 .container {
@@ -35,36 +39,41 @@ body {
 }
 
 .header {
-	background-color: #3F51B5;
 	width: 100%;
 	line-height: 5rem;
 	color: white;
-	padding-left: 3rem;
+	text-align: center;
 }
 
 .main {
-	padding-left: 4rem;
+	text-align: center;
 	padding-top: 2rem;
 	padding-bottom: 3rem;
-	background-color: white;
+	background: linear-gradient(
+      rgba(17, 42, 6, .5), 
+      rgba(17, 42, 6, .5)
+    ), url('../images/green.jpeg');
+	color: white;
+	font-family: 'lato';
+
 }
 
 .main li {
 	padding-top: 1rem;
-	font-size: 1.15rem;
+	font-size: 2.2rem;
+
 }
 
-.add {
-	background-color: #3F51B5;
+.add a, .add a:hover {
 	width: 100%;
 	line-height: 5rem;
 	color: white;
 	padding-left: 2rem;
-/*	text-transform: uppercase;
-*/	
 	text-align: center;
-	float: bottom;
-	position: fixed; bottom: 0; left: 0
+	position: fixed; 
+	bottom: 0; 
+	left: 0;
+	text-decoration: none;
 }
 
 .add:hover {
@@ -73,4 +82,7 @@ body {
 
 strike {
 	color: #ff3f80;
+}
+.listForm {
+	display: none;
 }
