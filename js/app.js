@@ -1,29 +1,51 @@
 
 $(document).ready(function(){
 
-  $('.addLink').click(function(e) {
-  	$(".listForm").show();
-    e.preventDefault();
-  }); //show input box
+    /*--- Display information box ---*/
+    $(".what").click(function(){
+      $(".overlay").fadeIn(800);
 
-  $( ".add" ).click(function() {
-    $( "input" ).focus();
-  }); //autofocus
+
+
+    });
+
+    /*--- Hide information box ---*/
+    $("a.close").click(function(){
+      $(".overlay").fadeOut(1200);
+    });
+
+
+
+
+
+    $(".listForm").show();
+
+
+  // $( ".add" ).click(function() {
+  //   $( "input" ).focus();
+  // }); //autofocus
 
   $('.listForm').submit(function(e) {
     var value = $('.item').val();
     $( ".lists" ).prepend("<li>" + value + "</li>");
+    $("input").val(" ");
     e.preventDefault();
-  })
+  });
 
-  // $( "input" ).keyup(function(e) { 
-  //   if(e.which==13) {
-  //     var value = $( this ).val();
-  //     $( ".lists" ).prepend("<li>" + value + "</li>");
-  //   	$(".input").hide();
-  //   	$("input").val(" ")
-  //   } //End if
-  // });
+  $( "input" ).keyup(function(e) { 
+    if(e.which==13) {
+      var value = $( this ).val();
+      // $( ".lists" ).prepend("<li>" + value + "</li>");
+    	// $(".input").hide();
+    	$("input").val(" ");
+    } //End if
+  });
+
+
+
+
+
+
 
  $('ul').on('click', 'li', function() {
   	if ($(this).is("strike")) {
