@@ -5,9 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" href="reset.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italicb,300,300italic' rel='stylesheet' type='text/css'>	
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
 
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -17,55 +19,49 @@
 <!-- Information -->
 		<a class="close" href="#">
 			<div class="overlay" id="modal">
-				
+				<div></div>
 					<h3>Couldn't figure it out?</h3>
-					<h4>That's disapointing.</h4>
+					<h4>That's disappointing.</h4>
+			</div>
+
 			</div>
 		</a>
 
 <!-- MAIN PAGE-->
 	<div class="container">
-		<div class="header">
-		</div>
 		<div class="main">
 			<div class="cart">
-			<i class="fa fa-shopping-cart fa-5x" style="color:white;">
-			</i>
+				<i class="fa fa-shopping-cart fa-5x" style="color:white;">
+				</i>
 			</div>
 
 			<p class="input">
 				<form action="" method="post" class="listForm">
-				<input type="text" class="item" placeholder="tap here to add an item">
+				<input type="text" class="item" placeholder="type here to add an item">
 <!-- 				<input type="submit" class= "submit" value="+"> -->
 				</form>
 			</p>
 			<ul>
 				<div class="lists">
-					<li></li>
-					<li></li>
-					<li></li>
-					<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-					<br><br><br><br><br>
+					
+
 				</div>
 			</ul>
+
+			<div class="question">
+				<h2>
+					<a class="what"  href="#">
+						<span class="fa-stack fa-sm">
+					  <!-- <i class="fa fa-circle-o fa-stack-2x"style="color:white;"></i> -->
+
+							<i class="fa fa-question fa-3x" style="color:white;">
+							</i>
+						</span>
+					</a>
+				</h2>
+			</div>
 		</div>
-		<div class="add">
-			<h2>
-				<a class="what"  href="#">
-
-
-				<span class="fa-stack fa-sm">
-
-
-				  <!-- <i class="fa fa-circle-o fa-stack-2x"style="color:white;"></i> -->
-
-					<i class="fa fa-question fa-stack-1x" style="color:white;">
-			</i>
-			</span>
-				</a>
-			</h2>
-		</div>
-
+	</div>
 
 		<script src="https://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>

@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     /*--- Display information box ---*/
     $(".what").click(function(){
-      $(".overlay").fadeIn(800);
+      $(".overlay").fadeIn(1000);
 
 
 
@@ -11,12 +11,8 @@ $(document).ready(function(){
 
     /*--- Hide information box ---*/
     $("a.close").click(function(){
-      $(".overlay").fadeOut(1200);
+      $(".overlay").fadeOut(1000);
     });
-
-
-
-
 
     $(".listForm").show();
 
@@ -43,18 +39,20 @@ $(document).ready(function(){
 
 
 
+$('ul').on('click', 'li', function() {
+  $(this).toggleClass('striker');
+  $(this).toggleClass('dope li:before');
+});
 
 
-
-
- $('ul').on('click', 'li', function() {
-  	if ($(this).is("strike")) {
-  		$(this).unwrap();
-  	} 
-  	else {
-  		$(this).wrap("<strike></strike>");
-  	}
-  }); //strike or unstrike
+ // $('ul').on('click', 'li', function() {
+ //  	if ($(this).is("strike")) {
+ //  		$(this).unwrap();
+ //  	} 
+ //  	else {
+ //  		$(this).wrap("<strike></strike>");
+ //  	}
+ //  }); //strike or unstrike
 
   $('ul').on('dblclick', 'li', function() {
   	$(this).remove();
